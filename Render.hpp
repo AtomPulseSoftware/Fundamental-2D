@@ -1,12 +1,12 @@
 #include <sdl2/SDL.h>
 
-class Render
+class F2D
 {
 public:
-    SDL_Window *window;
-    SDL_Renderer *renderer;
+    inline static SDL_Window *window;
+    inline static SDL_Renderer *renderer;
 
-    int Init(const char *Name, float x, float y)
+    static int Init(const char *Name, float x, float y)
     {
         if (SDL_Init(SDL_INIT_VIDEO | SDL_INIT_TIMER | SDL_INIT_GAMECONTROLLER) != 0)
         {
@@ -46,7 +46,7 @@ public:
         return 3;
     }
 
-    void Shutdown()
+    static void Shutdown()
     {
         if (renderer)
         {
