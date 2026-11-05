@@ -14,6 +14,7 @@ Extra:
 	Window: F2D::window
 
 Example:
+
 	#include <F2D.hpp>
 
 	int main()
