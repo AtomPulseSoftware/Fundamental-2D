@@ -1,4 +1,4 @@
-Fundumental 2D 
+Fundamental 2D 
 
 Small library for faster initialization of SDL2 projects.
 
